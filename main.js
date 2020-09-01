@@ -1,8 +1,16 @@
-var hamburger = $("a.close");
+var hamburger = $(".header-right i");
 
 hamburger.click(
 
 function () {
-  $("div.hamburger-menu").fadeIn();
+  $(".hamburger-menu").fadeIn("slow");
  }
+);
+
+var closeMenu = $(".close");
+
+closeMenu.click(
+  function () {
+    $(".hamburger-menu").fadeOut("slow");
+  }
 );
