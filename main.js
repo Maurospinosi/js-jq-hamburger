@@ -1,6 +1,8 @@
 var hamburger = $(".header-right i");
-var yes = $("div.hamburger-menu");
-//
+var closeMenu = $(".close");
+
+// ESERCIZIO SVOLTO CON  fadeIn E fadeOut
+
 // hamburger.click(
 //
 // function () {
@@ -8,7 +10,6 @@ var yes = $("div.hamburger-menu");
 //  }
 // );
 //
-// var closeMenu = $(".close");
 //
 // closeMenu.click(
 //   function () {
@@ -16,8 +17,16 @@ var yes = $("div.hamburger-menu");
 //   }
 // );
 
+// ESERCIZIO SVOLTO CON addClass
+
 hamburger.click(
   function () {
-   yes.addClass(".active");
+   $("div.hamburger-menu").addClass("active");
+  }
+);
+
+closeMenu.click(
+  function () {
+   $("div.hamburger-menu").removeClass("active");
   }
 );
